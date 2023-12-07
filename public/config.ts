@@ -13,7 +13,7 @@ function ConfigFactory(){
     let config: configModel;
 
     // config dir
-    const configDir = path.join(app.getPath('home'), '.claude');
+    const configDir = path.join(app.getPath('home'), '.bard');
     // config file
     const configFile = path.join(configDir, 'config.json');
 
@@ -56,7 +56,7 @@ function ConfigFactory(){
 // load and update config file
 function ConfigUpdate(config: configModel){
     // config dir
-    const configDir = path.join(app.getPath('home'), '.claude');
+    const configDir = path.join(app.getPath('home'), '.bard');
     // config file
     const configFile = path.join(configDir, 'config.json');
 

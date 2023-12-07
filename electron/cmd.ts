@@ -28,6 +28,7 @@ cmdList.forEach(item => {
 
 
 export default async function cmdInit() {
+
     const styleDom = document.createElement('style');
     styleDom.innerHTML = `
     .chat-prompt-cmd-list {
@@ -78,13 +79,13 @@ export default async function cmdInit() {
     `
     document.head.append(styleDom);
 
-    let fieldset = document.getElementsByTagName('fieldset')[0];
+    let fieldset = document.getElementsByTagName('input-area')[0];
 
     // check if fieldset exists
     if (!fieldset) {
         // wait for fieldset
         while (true) {
-            fieldset = document.getElementsByTagName('fieldset')[0];
+            fieldset = document.getElementsByTagName('input-area')[0];
             if (fieldset) {
                 break;
             }
@@ -92,7 +93,7 @@ export default async function cmdInit() {
             await new Promise(resolve => setTimeout(resolve, 1000));
         }
 
-        fieldset = document.getElementsByTagName('fieldset')[0];
+        fieldset = document.getElementsByTagName('input-area')[0];
     }
 
     // console.log('fieldset exists');

@@ -12,7 +12,7 @@ import logger from 'electron-log'
 // log
 logger.transports.file.maxSize = 1002430 // 10M
 logger.transports.file.format = '[{y}-{m}-{d} {h}:{i}:{s}.{ms}] [{level}]{scope} {text}';
-logger.transports.file.resolvePath = () => join(path.join(app.getPath('home'), '.claude'), 'logs/claude.log')
+logger.transports.file.resolvePath = () => join(path.join(app.getPath('home'), '.bard'), 'logs/bard.log')
 
 app.commandLine.appendSwitch("--ignore-certificate-errors", "true");
 // Scheme must be registered before the app is ready
@@ -28,7 +28,7 @@ let win: BrowserWindow | null = null;
 app.whenReady().then(() => {
 
     win= new BrowserWindow({
-        title: 'Claude',
+        title: 'Bard',
         width: config.main_width,
         height: config.main_height,
         center: true,
@@ -45,7 +45,7 @@ app.whenReady().then(() => {
     session.setUserAgent(config.ua_tray);
 
     // load url
-    win.loadURL('https://claude.ai/chat/').then(r =>initCmd()).catch(e => logger.error(e));
+    win.loadURL('https://bard.google.com/chat').then(r =>initCmd()).catch(e => logger.error(e));
 
     // tray
     createTray(win);
@@ -156,12 +156,12 @@ app.whenReady().then(() => {
 
     // get config path
     ipcMain.handle('getConfigPath', () => {
-        return path.join(app.getPath('home'), '.claude')
+        return path.join(app.getPath('home'), '.bard')
     })
 
     // open config
     ipcMain.on('openConfig', () => {
-        const configDir = path.join(app.getPath('home'), '.claude');
+        const configDir = path.join(app.getPath('home'), '.bard');
         const { shell } = require('electron')
         shell.openPath(configDir).then(r => logger.info(r))
     })

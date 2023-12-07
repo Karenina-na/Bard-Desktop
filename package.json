@@ -1,12 +1,12 @@
 {
-  "name": "claude-desktop",
+  "name": "bard-desktop",
   "version": "1.0.0",
   "private": true,
   "author": {
     "name": "Karenina-na",
     "email": "weizixiang0@outlook.com"
   },
-  "description": "An Claude desktop application built with Vite + Vue 3.x + Electron 13.x",
+  "description": "An Bard desktop application built with Vite + Vue 3.x + Electron 13.x",
   "main": "dist-electron/main.js",
   "scripts": {
     "dev": "vite",
@@ -50,9 +50,9 @@
     "vue-tsc": "^1.8.5"
   },
   "build": {
-    "appId": "Karenina-na.Claude",
+    "appId": "Karenina-na.Bard",
     "artifactName": "${productName}-setup-${version}.${ext}",
-    "productName": "Claude-Desktop",
+    "productName": "Bard-Desktop",
     "copyright": "Copyright © 2023 Karenina-na",
     "directories": {
       "output": "dist-client"
@@ -61,7 +61,7 @@
       {
         "provider": "github",
         "owner": "Karenina-na",
-        "repo": "Claude-Desktop",
+        "repo": "Bard-Desktop",
         "releaseType": "release",
         "protocol": "https"
       }

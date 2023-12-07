@@ -4,7 +4,7 @@ import logger from 'electron-log'
 import https from "https";
 
 const promptUrl = 'https://raw.githubusercontent.com/f/awesome-chatgpt-prompts/main/prompts.csv'
-// const promptPath = join(app.getPath('home'), '.claude', 'prompt')
+// const promptPath = join(app.getPath('home'), '.bard', 'prompt')
 // const promptInfo = join(promptPath, 'promptInfo.json')
 
 

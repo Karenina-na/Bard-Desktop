@@ -1,16 +1,16 @@
 <div align="center" style="text-align: center;">
-  <img width="180" src="public/logo.png" alt="Claude">
-  <h1>Claude</h1>
-  <p>Claude Desktop App (Windows)</p>
+  <img width="180" src="public/logo.png" alt="Bard">
+  <h1>Bard</h1>
+  <p>Bard Desktop App (Windows)</p>
 </div>
 
 ---
 
-**Claude to Desktop is an Electron-based desktop application for Claude2.**
+**Bard to Desktop is an Electron-based desktop application for Bard2.**
 
 ✨ **It is an unofficial project, for personal learning and research purposes.**
 
-⚗️ Claude2 is a powerful cloud-based note-taking application, and this project aims to bring its functionality to the desktop environment.
+⚗️ Bard2 is a powerful cloud-based note-taking application, and this project aims to bring its functionality to the desktop environment.
 
 ***
 
@@ -20,9 +20,9 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/Karenina-na/Claude-Desktop.git
+git clone https://github.com/Karenina-na/Bard-Desktop.git
 # Go into the repository
-cd Claude-Desktop
+cd Bard-Desktop
 # Install dependencies
 npm install
 # Run the app

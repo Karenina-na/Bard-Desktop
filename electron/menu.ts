@@ -28,16 +28,16 @@ export default function createMenu(config: configModel) {
     }
 
     const menuTemplate: Array<MenuItemConstructorOptions> = [{
-            label: 'Claude',
+            label: 'Bard',
             submenu: [
                 {
-                    label: 'About Claude', click: () => {
+                    label: 'About Bard', click: () => {
                         dialog.showMessageBox({
                             icon: 'public/logo.png',
-                            title: 'About Claude',
+                            title: 'About Bard',
                             // package.json version
                             message: `Version ${app.getVersion()}`,
-                            detail: 'Claude is a desktop app for the Claude chatbot.',
+                            detail: 'Bard is a desktop app for the Bard chatbot.',
                             buttons: ['OK']
                         });
                     }
@@ -196,7 +196,7 @@ export default function createMenu(config: configModel) {
                     label: 'Learn More',
                     click: async () => {
                         const {shell} = require('electron')
-                        await shell.openExternal('https://github.com/Karenina-na/Claude-Desktop')
+                        await shell.openExternal('https://github.com/Karenina-na/Bard-Desktop')
                     }
                 },
                 {

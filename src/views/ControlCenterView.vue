@@ -13,7 +13,7 @@
 
               <!-- name -->
               <div class="control-aside-div">
-                <p class="control-aside-title">Claude</p>
+                <p class="control-aside-title">Bard</p>
                 <p class="control-aside-title">{{version}}</p>
               </div>
 
@@ -85,7 +85,7 @@
             <!-- copy right -->
             <div class="copy-right">
               <p>
-                <a href="https://github.com/Karenina-na/Claude-Desktop" target="_blank" >Claude Desktop</a>
+                <a href="https://github.com/Karenina-na/Bard-Desktop" target="_blank" >Bard Desktop</a>
                 © 2023 Created by <a href="https://github.com/Karenina-na/" target="_blank">Karenina-na</a>
               </p>
             </div>
