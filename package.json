@@ -1,6 +1,6 @@
 {
   "name": "bard-desktop",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "author": {
     "name": "Karenina-na",
@@ -67,7 +67,7 @@
       }
     ],
     "win": {
-      "icon": "./public/logo.ico",
+      "icon": "./public/logo.png",
       "target": [
         {
           "target": "nsis",
